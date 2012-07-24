@@ -2,11 +2,12 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
 
-	<ItemGroup>
-		<PackageFile Include="$(BuildOutputDir)\*.nupkg" />
-	</ItemGroup>
 	
 	<Target Name="Nuget" Inputs="@(ProjectsToNuGet)"  Outputs="%(Identity).Dummy"  >
+		<ItemGroup>
+			<PackageFile Include="$(BuildOutputDir)\*.nupkg" />
+		</ItemGroup>
+
 		<Message Text="@(ProjectsToNuGet)" />
 
 		<Exec Command='$(NugetExe) pack @(ProjectsToNuGet) -Build -OutputDirectory $(BuildOutputDir)'/>
@@ -20,6 +21,10 @@
 
 
 	<Target Name="NugetPush" >
+		<ItemGroup>
+			<PackageFile Include="$(BuildOutputDir)\*.nupkg" />
+		</ItemGroup>
+
 		<Message Text="PackgeFile: @(PackageFile)" />
 		<Exec Command="$(NugetExe) push %(PackageFile.Identity)"  ContinueOnError="true"/>
 	</Target>
