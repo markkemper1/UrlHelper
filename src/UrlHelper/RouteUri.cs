@@ -14,4 +14,15 @@ namespace UrlHelper
 			return base.PathAndQuery;
 		}
 	}
+
+	public static class UriExtensions
+	{
+		public static string ToHttps(this Uri uri)
+		{
+			if (uri.Scheme == "https")
+				return uri.AbsoluteUri;
+
+			return String.Format("https://{0}{1}", uri.DnsSafeHost, uri.AbsolutePath);
+		}
+	}
 }

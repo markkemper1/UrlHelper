@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9DC66E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlHelper.Test", "UrlHelper.Test\UrlHelper.Test.csproj", "{544CABB1-6C81-4F15-990B-BD988A8DFBB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{3CAD9428-D9DC-4F92-BC86-B74F073168FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CAD9428-D9DC-4F92-BC86-B74F073168FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CAD9428-D9DC-4F92-BC86-B74F073168FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{544CABB1-6C81-4F15-990B-BD988A8DFBB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{544CABB1-6C81-4F15-990B-BD988A8DFBB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{544CABB1-6C81-4F15-990B-BD988A8DFBB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{544CABB1-6C81-4F15-990B-BD988A8DFBB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

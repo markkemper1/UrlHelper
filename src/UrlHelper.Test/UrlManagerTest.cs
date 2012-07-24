@@ -1,12 +1,11 @@
-UrlHelper
-=========
+﻿using System;
+using System.Configuration;
+using System.Web.Mvc;
+using NUnit.Framework;
 
-A  ASP.MVC url helper library for hand crafting strongly typed url helper methods 
-
-See below for test class for usage example.
-
-	
-`	[TestFixture]
+namespace UrlHelper.Test
+{
+	[TestFixture]
 	public class UrlManagerTest
 	{
 		private SampleAppUrls AppUrls;
@@ -83,4 +82,4 @@ See below for test class for usage example.
 		{
 		}
 	}
-`
+}
