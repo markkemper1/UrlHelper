@@ -5,8 +5,7 @@ A  ASP.MVC url helper library for hand crafting strongly typed url helper method
 
 See below for test class for usage example.
 
-	
-`	[TestFixture]
+	[TestFixture]
 	public class UrlManagerTest
 	{
 		private SampleAppUrls AppUrls;
@@ -83,4 +82,3 @@ See below for test class for usage example.
 		{
 		}
 	}
-`
