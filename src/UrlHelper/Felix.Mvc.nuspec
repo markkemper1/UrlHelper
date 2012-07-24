@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>$id$</id>
+        <version>$version$</version>
+        <authors>$author$</authors>
+        <owners>$author$</owners>
+        <projectUrl>http://felix.codeplex.com/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>$description$</description>
+        <tags></tags>
+        <dependencies>
+            <dependency id="WebActivator" version="1.0.0.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="FelixStartup.cs.pp" target="content\App_Start" />
+    </files>
+</package>
