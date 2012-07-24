@@ -2,5 +2,13 @@
 bin
 obj
 
+*.user
+ReSharper
+/src/packages
+/src/.switchReferences.xml
+/src/*.suo
+/src/_ReSharper*
+*.suo
+
 # mstest test results
 TestResults

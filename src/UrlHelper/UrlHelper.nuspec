@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<authors>$author$</authors>
+		<owners>$author$</owners>
+		<projectUrl>http://github.com/markkemper1/RazorEmail</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<summary>
+			A common command infrastructure library. Provides an ICommand interface and a default command executor.
+		</summary>
+		<description>
+			Allows commands to have services or dependencies provided by the CommandProcessor.
+			
+			For example a database command might look like this
+			
+			public class GetUserCommand : DbCommandBase&lt;Use&gt;
+			{
+				//Constructor only takes the arguments necessary to run the command
+				public GetUserCommand(int userId)
+				{
+					this.UserId = userId;
+				}
+				
+				public int UserId {get;set;}
+				
+				public override User Execute(IDbConnection db)
+				{
+					return db.Query&lt;User&gt;("Select * from User where Id = @UserId", new { UserId}, this.Transaction)
+							 .FirstOrDefault();
+				}
+			}
+
+			The Command executor will then provide the neccessary DbProviderFactory to the command before execution.
+			(nb:	The DbCommandBase is creating the actual connection)
+			
+			Commands can all execute other commands, e.g.
+				this.Execute(new SendNewUserEmailCommand("Johnny", "John@doe.com"));
+			
+			It is then the responsiblity of the Command Executor to provide the necessary email sending service.
+
+			More info can be found here.
+			http://github.com/markkemper1/Commando
+		</description>
+	</metadata>
+</package>

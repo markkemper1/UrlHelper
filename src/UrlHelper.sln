@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlHelper", "UrlHelper\UrlHelper.csproj", "{3CAD9428-D9DC-4F92-BC86-B74F073168FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F37BA7BC-4896-4EE4-80AE-8553F0912523}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\build-nuget.msbuild = ..\build\build-nuget.msbuild
+		..\build\build-version.msbuild = ..\build\build-version.msbuild
+		..\build.bat = ..\build.bat
+		..\build\build.msbuild = ..\build\build.msbuild
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9DC66E0E-CD4E-47FB-8630-C86CCC9DDFC5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\nuget.exe = .nuget\nuget.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CAD9428-D9DC-4F92-BC86-B74F073168FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAD9428-D9DC-4F92-BC86-B74F073168FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAD9428-D9DC-4F92-BC86-B74F073168FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAD9428-D9DC-4F92-BC86-B74F073168FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
