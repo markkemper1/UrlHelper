@@ -42,11 +42,15 @@
     <Compile Include="DefaultResolver.cs" />
     <Compile Include="IResolver.cs" />
     <Compile Include="IRouteResolver.cs" />
+    <None Include="NugetFiles\RoutingExtensions.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RouteContains.cs" />
     <Compile Include="RouteUri.cs" />
     <Compile Include="RoutingExtensions.cs" />
     <Compile Include="RoutingHttpContext.cs" />
+    <None Include="NugetFiles\AppUrls.cs.pp" />
+    <None Include="NugetFiles\AccountsUrls.cs.pp" />
+    <None Include="NugetFiles\UrlHelperStartup.cs.pp" />
     <Compile Include="UrlManager.cs" />
     <Compile Include="UrlsBase.cs" />
   </ItemGroup>

@@ -9,6 +9,6 @@ ReSharper
 /src/*.suo
 /src/_ReSharper*
 *.suo
-
+	
 # mstest test results
 TestResults

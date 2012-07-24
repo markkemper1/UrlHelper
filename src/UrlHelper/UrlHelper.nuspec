@@ -22,5 +22,14 @@
 			More info can be found here.
 			http://github.com/markkemper1/UrlHelper
 		</description>
+		<dependencies>
+			<dependency id="WebActivator" version="1.0.0" />
+		</dependencies>
 	</metadata>
+	<files>
+		<file src="NugetFiles\AccountsUrls.cs.pp" target="content\Routing" />
+		<file src="NugetFiles\AppUrls.cs.pp" target="content\Routing" />
+		<file src="NugetFiles\UrlHelperStartup.cs.pp" target="content\Routing" />
+		<file src="NugetFiles\RoutingExtensions.cs.pp" target="content\Routing" />
+	</files>
 </package>

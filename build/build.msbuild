@@ -5,7 +5,7 @@
 		<SolutionToCompile>..\src\UrlHelper.sln</SolutionToCompile>
 		<Major>1</Major>
 		<Minor>0</Minor>
-		<Build>0</Build>
+		<Build>10</Build>
 		<Revision>0</Revision>
 		<BuildOutputDir>..\bin</BuildOutputDir>
 		<MSBuildMercurialPath>.</MSBuildMercurialPath>
