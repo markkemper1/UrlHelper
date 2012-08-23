@@ -41,12 +41,6 @@ namespace UrlHelper.Test
 			Assert.AreEqual("/Tests/Edit/abc", AppUrls.Tests.Edit("abc").ToString());
 		}
 
-		[Test]
-		public void should_convert_to_https_easily()
-		{
-			Assert.AreEqual("https://testing.com/Tests/Edit/abc", AppUrls.Tests.Edit("abc").ToHttps());
-		}
-
 		public class SampleAppUrls : AreaRegistration
 		{
 			public TestsUrls Tests { get; set; }

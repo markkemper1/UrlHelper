@@ -41,7 +41,7 @@ namespace UrlHelper
 			rvd["id"] = id;
 			return ToUri(rvd);
 		}
-		
+
 		public virtual Uri Delete(object id)
 		{
 			var rvd = Action("Delete");

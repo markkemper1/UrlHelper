@@ -51,6 +51,7 @@
     <None Include="NugetFiles\AppUrls.cs.pp" />
     <None Include="NugetFiles\AccountsUrls.cs.pp" />
     <None Include="NugetFiles\UrlHelperStartup.cs.pp" />
+    <Compile Include="UriExtensions.cs" />
     <Compile Include="UrlManager.cs" />
     <Compile Include="UrlsBase.cs" />
   </ItemGroup>
