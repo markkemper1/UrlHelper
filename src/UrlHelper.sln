@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlHelper", "UrlHelper\UrlHelper.csproj", "{3CAD9428-D9DC-4F92-BC86-B74F073168FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F37BA7BC-4896-4EE4-80AE-8553F0912523}"
@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9DC66E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlHelper.Test", "UrlHelper.Test\UrlHelper.Test.csproj", "{544CABB1-6C81-4F15-990B-BD988A8DFBB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlHelper.Mvc4", "UrlHelper.Mvc4\UrlHelper.Mvc4.csproj", "{1C2A4735-8E0F-438E-8D1E-4CB935307D6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{544CABB1-6C81-4F15-990B-BD988A8DFBB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{544CABB1-6C81-4F15-990B-BD988A8DFBB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{544CABB1-6C81-4F15-990B-BD988A8DFBB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2A4735-8E0F-438E-8D1E-4CB935307D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2A4735-8E0F-438E-8D1E-4CB935307D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2A4735-8E0F-438E-8D1E-4CB935307D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2A4735-8E0F-438E-8D1E-4CB935307D6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

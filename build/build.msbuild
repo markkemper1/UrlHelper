@@ -19,6 +19,7 @@
 
 	<ItemGroup>
 		<ProjectsToNuGet Include="..\src\UrlHelper\UrlHelper.csproj" />
+		<ProjectsToNuGet Include="..\src\UrlHelper.Mvc4\UrlHelper.Mvc4.csproj" />
 	</ItemGroup>
 
 	<Target Name="Clean">

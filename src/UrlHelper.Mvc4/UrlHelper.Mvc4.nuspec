@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<authors>$author$</authors>
+		<owners>$author$</owners>
+		<projectUrl>http://github.com/markkemper1/UrlHelper</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<summary>
+			Provides suport for hand crafted strongly typed Urls
+		</summary>
+		<description>
+			Example usage:
+
+			Inside a view:
+				@this.Urls().Tasks.Create() -> returns a Uri -> ToString() is called -> "/Tasks/Create"
+
+			Inside a controller
+				return this.Urls().Tasks.Index().ToRedirect(); -> returns a redirect result.
+
+			More info can be found here.
+			http://github.com/markkemper1/UrlHelper
+		</description>
+		<dependencies>
+			<dependency id="WebActivator" version="1.0.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="NugetFiles\AccountsUrls.cs.pp" target="content\Routing" />
+		<file src="NugetFiles\AppUrls.cs.pp" target="content\Routing" />
+		<file src="NugetFiles\UrlHelperStartup.cs.pp" target="content\Routing" />
+		<file src="NugetFiles\RoutingExtensions.cs.pp" target="content\Routing" />
+	</files>
+</package>
