@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Web.Mvc;
+using System.Web.Routing;
 using NUnit.Framework;
 
 namespace UrlHelper.Test
@@ -14,6 +15,7 @@ namespace UrlHelper.Test
 		public void SetUp()
 		{
 			ConfigurationManager.AppSettings["BaseUri"] = "http://testing.com";
+            RouteTable.Routes.Clear();
 			AppUrls = UrlManager<SampleAppUrls>.Initialize();
 		}
 

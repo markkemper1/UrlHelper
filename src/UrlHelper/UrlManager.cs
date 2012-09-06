@@ -9,7 +9,7 @@ using System.Web.Routing;
 
 namespace UrlHelper
 {
-	public class UrlManager<AREA_TYPE> where AREA_TYPE : new()
+	public class UrlManager<AREA_TYPE> where AREA_TYPE : AreaRegistration, new()
 	{
 		public static AREA_TYPE Root { get; private set; }
 
