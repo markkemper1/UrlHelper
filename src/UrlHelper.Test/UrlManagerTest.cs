@@ -22,25 +22,25 @@ namespace UrlHelper.Test
 		[Test]
 		public void should_return_full_absoluteUri()
 		{
-			Assert.AreEqual("http://testing.com/Tests", AppUrls.Tests.Index().AbsoluteUri);
+			Assert.AreEqual("http://testing.com/tests", AppUrls.Tests.Index().AbsoluteUri);
 		}
 
 		[Test]
 		public void should_return_relative_path_on_ToString()
 		{
-			Assert.AreEqual("/Tests", AppUrls.Tests.Index().ToString());
+			Assert.AreEqual("/tests", AppUrls.Tests.Index().ToString());
 		}
 
 		[Test]
 		public void should_add_unknown_parameters_to_query_string()
 		{
-			Assert.AreEqual("/Tests/Complete?test=abc", AppUrls.Tests.Complete("abc").ToString());
+			Assert.AreEqual("/tests/complete?test=abc", AppUrls.Tests.Complete("abc").ToString());
 		}
 
 		[Test]
 		public void should_add_known_parameters_to_url_segment()
 		{
-			Assert.AreEqual("/Tests/Edit/abc", AppUrls.Tests.Edit("abc").ToString());
+			Assert.AreEqual("/tests/edit/abc", AppUrls.Tests.Edit("abc").ToString());
 		}
 
 		public class SampleAppUrls : AreaRegistration

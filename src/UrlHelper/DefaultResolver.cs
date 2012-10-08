@@ -9,6 +9,7 @@ namespace UrlHelper
 		private readonly RouteCollection routes;
 		private readonly Uri baseUri;
 		private RequestContext requestContext;
+	    public static bool ForceLowerCase = true;
 
 		public DefaultResolver(RouteCollection routes, Uri baseUri)
 		{
@@ -42,7 +43,9 @@ namespace UrlHelper
 				throw new ArgumentException(sb.ToString());
 			}
 
-			return new RouteUri(baseUri, result.VirtualPath);
+            var path = ForceLowerCase && result.VirtualPath != null ? result.VirtualPath.ToLowerInvariant() : result.VirtualPath;
+
+            return new RouteUri(baseUri, path);
 		}
 	}
 }

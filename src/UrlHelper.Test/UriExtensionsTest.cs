@@ -24,13 +24,13 @@ namespace UrlHelper.Test
             [Test]
             public void should_keep_port_when_converting_to_https()
             {
-                Assert.AreEqual("https://testing.com:9818/Tests/Edit/abc", AppUrls.Tests.Edit("abc").ToHttps().ToString());
+                Assert.AreEqual("https://testing.com:9818/tests/edit/abc", AppUrls.Tests.Edit("abc").ToHttps().ToString());
             }
 
             [Test]
             public void should_keep_querystring_when_converting_to_https()
             {
-                Assert.AreEqual("https://testing.com:9818/Tests/Complete?test=abc", AppUrls.Tests.Complete("abc").ToHttps().ToString());
+                Assert.AreEqual("https://testing.com:9818/tests/complete?test=abc", AppUrls.Tests.Complete("abc").ToHttps().ToString());
             }
         }
 
@@ -49,14 +49,14 @@ namespace UrlHelper.Test
             [Test]
             public void should_convert_to_https_easily()
             {
-                Assert.AreEqual("https://testing.com/Tests/Edit/abc", AppUrls.Tests.Edit("abc").ToHttps().ToString());
+                Assert.AreEqual("https://testing.com/tests/edit/abc", AppUrls.Tests.Edit("abc").ToHttps().ToString());
             }
 
 
             [Test]
             public void should_keep_querystring_when_converting_to_https()
             {
-                Assert.AreEqual("https://testing.com/Tests/Complete?test=abc", AppUrls.Tests.Complete("abc").ToHttps().ToString());
+                Assert.AreEqual("https://testing.com/tests/complete?test=abc", AppUrls.Tests.Complete("abc").ToHttps().ToString());
             }
         }
 

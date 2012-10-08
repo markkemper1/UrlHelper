@@ -32,19 +32,19 @@ See below for test class for usage example.
 		[Test]
 		public void should_add_unknown_parameters_to_query_string()
 		{
-			Assert.AreEqual("/Tests/Complete?test=abc", AppUrls.Tests.Complete("abc").ToString());
+			Assert.AreEqual("/tests/Complete?test=abc", AppUrls.Tests.Complete("abc").ToString());
 		}
 
 		[Test]
 		public void should_add_known_parameters_to_url_segment()
 		{
-			Assert.AreEqual("/Tests/Edit/abc", AppUrls.Tests.Edit("abc").ToString());
+			Assert.AreEqual("/tests/Edit/abc", AppUrls.Tests.Edit("abc").ToString());
 		}
 
 		[Test]
 		public void should_convert_to_https_easily()
 		{
-			Assert.AreEqual("https://testing.com/Tests/Edit/abc", AppUrls.Tests.Edit("abc").ToHttps());
+			Assert.AreEqual("https://testing.com/tests/Edit/abc", AppUrls.Tests.Edit("abc").ToHttps());
 		}
 
 		public class SampleAppUrls : AreaRegistration
