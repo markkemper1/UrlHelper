@@ -11,6 +11,8 @@ namespace UrlHelper
 	{
 		private readonly object[] items;
 
+        public bool CaseSensitive { get; set; }
+
 		public RouteContains(params object[] items)
 		{
 			if (items == null) throw new ArgumentNullException("items");
@@ -24,7 +26,19 @@ namespace UrlHelper
 
 		public bool Match(HttpContextBase httpContext, Route route, string parameterName, RouteValueDictionary values, RouteDirection routeDirection)
 		{
-			return items.Contains(values[parameterName]);
+		    var routeValue = values[parameterName];
+
+		    foreach (var item in items)
+		    {
+		        if (item.Equals(routeValue))
+		            return true;
+
+
+		        if (!CaseSensitive && item is string && routeValue is string)
+		            return String.Compare((string) item, (string) routeValue, StringComparison.InvariantCultureIgnoreCase) ==
+		                   0;
+		    }
+		    return false;
 		}
 	}
 }

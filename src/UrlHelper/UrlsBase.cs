@@ -15,8 +15,13 @@ namespace UrlHelper
 			if (area == null) throw new ArgumentNullException("area");
 			this.area = area;
 			this.resolver = resolver;
-			this.className = this.GetType().Name.Replace("Urls", String.Empty);
+		    this.className = this.GetType().Name.Replace("Urls", String.Empty);
+
+            if(!KeepCase)
+                this.className = className.ToLower();
 		}
+
+        public virtual bool KeepCase { get; set; }
 
 		public virtual Uri Index()
 		{
