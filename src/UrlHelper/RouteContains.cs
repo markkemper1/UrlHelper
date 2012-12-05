@@ -34,9 +34,10 @@ namespace UrlHelper
 		            return true;
 
 
-		        if (!CaseSensitive && item is string && routeValue is string)
-		            return String.Compare((string) item, (string) routeValue, StringComparison.InvariantCultureIgnoreCase) ==
-		                   0;
+		        if (!CaseSensitive && item is string && routeValue is string &&
+		            String.Compare((string) item, (string) routeValue, StringComparison.InvariantCultureIgnoreCase) ==
+		            0)
+		            return true;
 		    }
 		    return false;
 		}

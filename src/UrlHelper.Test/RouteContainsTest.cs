@@ -15,7 +15,7 @@ namespace UrlHelper.Test
         [TestCase("SHip", "shIP")]
         public void should_match(object input, object testValue)
         {
-            var target = new RouteContains(input);
+            var target = new RouteContains(Guid.NewGuid(), "fdfdfdfdfdfdf", input);
 
             var result = target.Match(null, null, "test", new RouteValueDictionary()
                                                  {
