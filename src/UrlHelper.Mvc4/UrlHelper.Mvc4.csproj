@@ -77,6 +77,9 @@
     <Compile Include="..\UrlHelper\UrlsBase.cs">
       <Link>UrlsBase.cs</Link>
     </Compile>
+    <Compile Include="..\UrlHelper\UrlsEmptyBase.cs">
+      <Link>UrlsEmptyBase.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="NugetFiles\AccountsUrls.cs.pp" />

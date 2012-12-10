@@ -39,6 +39,7 @@
     <Reference Include="System.Web.Routing" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UrlsEmptyBase.cs" />
     <Compile Include="DefaultResolver.cs" />
     <Compile Include="IResolver.cs" />
     <Compile Include="IRouteResolver.cs" />
