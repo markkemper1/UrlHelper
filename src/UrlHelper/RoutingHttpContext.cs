@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Specialized;
 using System.Web;
 
 namespace UrlHelper
@@ -71,6 +72,11 @@ namespace UrlHelper
 			{
 				get { return this.baseUri.AbsolutePath; }
 			}
+
+            public override NameValueCollection QueryString
+            {
+                get { return HttpUtility.ParseQueryString(baseUri.Query); }
+            }
 		}
 	}
 }
